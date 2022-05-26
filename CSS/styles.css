@@ -1,0 +1,161 @@
+:root {
+    --colorWhite: #ffffff;
+    --colorBlack: #000000;
+    --colorLightGrey: #d6d1d1;
+    --colorGreen: #069e27;
+    --colorBlue: #3450af;
+    --colorOrange: #f33e27;
+    --colorYellow: #f8d14f;
+    --colorBlueSky: #4aa0c2;
+}
+
+/* Globales */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--colorLightGrey);
+}
+
+/* Tipografía */
+#titulo {
+    font-size: 22px;
+    text-align: center;
+}
+
+.lang {
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    justify-content: right;
+}
+
+.fa {
+    padding: 10px;
+    border-radius: 7px;
+    font-weight: 900;
+    font-size: 10px;
+    font-family: 'FontAwesome', sans-serif;
+    text-transform: uppercase;
+}
+
+.login-cont {
+    background-color: var(--colorWhite);
+    display: flex;
+    width: 45%;
+    height: 100%;
+    margin: 40px;
+}
+
+.login-cont__sec1,
+.login-cont__sec2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: stretch;
+    justify-content: space-evenly;
+    height: 300px;
+}
+
+.login-cont__sec1 {
+    width: 40%;
+    padding: 10px 30px 30px 30px;
+}
+
+.login-cont__sec2 {
+    width: 60%;
+    padding: 84px 30px 68px 30px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 20px;
+        align-items: flex-end;
+    }
+
+    .login-cont {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .login-cont__sec1,
+    .login-cont__sec2 {
+        width: 100%;
+    }
+
+    .login-cont__sec1 {
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+
+    .login-cont__sec2 {
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+
+    .fa {
+        position: sticky;
+        top: 80px;
+    }
+
+    .lang {
+        padding-right: 40px;
+    }
+}
+
+#registration {
+    text-decoration: none;
+    color: var(--colorBlueSky);
+}
+
+.input-text {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+
+}
+
+.btn {
+    border: none;
+    padding: 4px;
+    color: var(--colorWhite);
+}
+
+.btn:hover {
+    background-color: var(--colorLightGrey);
+    color: var(--colorBlack);
+}
+
+.btn--opt1 {
+    background-color: var(--colorGreen);
+}
+
+.btn--opt2 {
+    background-color: var(--colorBlue);
+}
+
+.btn--opt3 {
+    background-color: var(--colorOrange);
+}
+
+.btn--opt4 {
+    background-color: var(--colorYellow);
+}
+
+#listbox {
+    padding: 5px;
+    border-radius: 7px;
+}
