@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de usuario</title>
+    <title>User registration</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,29 +21,28 @@
 <body>
     <div class="lang">
         <select id="sel" class="fa" name="select">
-            <option value="es" selected>&#xf0ac; Español</option>
-            <option value="en">&#xf0ac; English</option>
+            <option value="es">&#xf0ac; Español</option>
+            <option value="en" selected>&#xf0ac; English</option>
         </select>
     </div>
     <div class="login-cont">
 
         <div class="login-cont__sec1">
-            <h1 id="titulo">Registro de usuario</h3>
+            <h1 id="titulo">User register</h3>
                 <input id="email" class="input-text" type="text" placeholder="E-Mail">
-                <input id="password" class="input-text" type="password" placeholder="Contraseña">
-                <input class="input-text" type="password" placeholder="Confirmar contraseña">
-                <button id="signUp" class="btn btn--opt1">Registrar usuario</button>
+                <input id="password" class="input-text" type="password" placeholder="Password">
+                <input class="input-text" type="password" placeholder="Confirm password">
+                <button id="signUp" class="btn btn--opt1">Register user</button>
         </div>
         <div class="login-cont__sec2">
-            <button class="btn btn--opt2">Registrarse con Facebook</button>
-            <button class="btn btn--opt3">Registrarse con Google</button>
-            <button class="btn btn--opt4">Registrarse con Correo electrónico</button>
+            <button class="btn btn--opt2">Register with Facebook</button>
+            <button class="btn btn--opt3">Register with Google</button>
+            <button class="btn btn--opt4">Register with E-Mail</button>
         </div>
 
     </div>
-    
-    <script src="JS/registration.js"></script>
-    <script type="module" src="JS/firebase.js"></script>
+<script src="JS/registration.js"></script>
+<script type="module" src="JS/firebase.js"></script>
 </body>
 
 </html>

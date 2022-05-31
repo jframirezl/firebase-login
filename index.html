@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Inicio de sesión</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="preload" href="CSS/normalize.css" as="style">
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preload" href="CSS/styles.css" as="style">
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 
 <body>
     <div class="lang">
-        <select class="fa" name="select">
-            <option value="ES" selected>&#xf0ac; Español</option>
-            <option value="EN">&#xf0ac; English</option>
+        <select id="sel" class="fa" name="select">
+            <option value="es" selected>&#xf0ac; Español</option>
+            <option value="en">&#xf0ac; English</option>
         </select>
     </div>
     <div class="login-cont">
@@ -42,6 +42,8 @@
 
     </div>
  
+    <script src="JS/index.js"></script>
+    <script type="module" src="JS/firebase.js"></script>
 </body>
 
 </html>
