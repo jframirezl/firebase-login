@@ -20,7 +20,7 @@
 
 <body>
     <div class="lang">
-        <select id="sel" class="fa" name="select">
+        <select id="sel-reg" class="fa" name="select">
             <option value="es" selected>&#xf0ac; Español</option>
             <option value="en">&#xf0ac; English</option>
         </select>
@@ -29,9 +29,11 @@
 
         <div class="login-cont__sec1">
             <h1 id="titulo">Registro de usuario</h3>
+                <input id="name" class="input-text" type="text" placeholder="Nombre">
+                <input id="last-name" class="input-text" type="text" placeholder="Apellido">
                 <input id="email" class="input-text" type="text" placeholder="E-Mail">
                 <input id="password" class="input-text" type="password" placeholder="Contraseña">
-                <input class="input-text" type="password" placeholder="Confirmar contraseña">
+                <input id="pass-confirmation" class="input-text" type="password" placeholder="Confirmar contraseña">
                 <button id="signUp" class="btn btn--opt1">Registrar usuario</button>
         </div>
         <div class="login-cont__sec2">
@@ -42,7 +44,8 @@
 
     </div>
     
-    <script src="JS/registration.js"></script>
+    <script src="JS/index.js"></script>
+    <script src="JS/validations.js"></script>
     <script type="module" src="JS/firebase.js"></script>
 </body>
 
