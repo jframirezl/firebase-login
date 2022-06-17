@@ -4,9 +4,10 @@
     --colorLightGrey: #d6d1d1;
     --colorGreen: #069e27;
     --colorBlue: #3450af;
-    --colorOrange: #f33e27;
+    --colorOrange: #f32727;
     --colorYellow: #f8d14f;
     --colorBlueSky: #4aa0c2;
+    --colorRed: red;
 }
 
 /* Globales */
@@ -59,7 +60,15 @@ body {
     height: 100%;
     margin: 40px;
 }
-
+.login-cont_msg{
+    width: 100%;
+    height: 2px;
+    padding-bottom: 25px;
+    background-color: var(--colorWhite);
+    color: var(--colorRed);
+    
+    font-style: italic;
+}
 .login-cont__sec1,
 .login-cont__sec2 {
     display: flex;
@@ -72,7 +81,7 @@ body {
 
 .login-cont__sec1 {
     width: 40%;
-    padding: 10px 30px 30px 30px;
+    padding: 10px 30px 50px 30px;
 }
 
 .login-cont__sec2 {

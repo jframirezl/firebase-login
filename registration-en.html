@@ -31,18 +31,20 @@
             <h1 id="titulo">User register</h3>
                 <input id="name" class="input-text" type="text" placeholder="Name">
                 <input id="last-name" class="input-text" type="text" placeholder="Last name">
+                <input id="username" class="input-text" type="text" placeholder="Username">
                 <input id="email" class="input-text" type="text" placeholder="E-Mail">
                 <input id="password" minlength="6" class="input-text" type="password" placeholder="Password">
                 <input id="pass-confirmation" class="input-text" type="password" placeholder="Confirm password">
                 <button id="signUp" class="btn btn--opt1">Register user</button>
+                <div class="login-cont_msg"><p id="message"></p></div>
         </div>
         <div class="login-cont__sec2">
             <button class="btn btn--opt2">Register with Facebook</button>
             <button class="btn btn--opt3">Register with Google</button>
             <button class="btn btn--opt4">Register with E-Mail</button>
         </div>
-
     </div>
+    
 <script src="JS/index.js"></script>
 <script src="JS/validations.js"></script>
 <script type="module" src="JS/firebase.js"></script>
